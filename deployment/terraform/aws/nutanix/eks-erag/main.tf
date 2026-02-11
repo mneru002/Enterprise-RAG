@@ -17,7 +17,7 @@ resource random_id "rid" {
 }
 
 locals {
-  name   = "erag-nutanix-${random_id.rid.dec}"
+  name   = "erag-nutanix-test-${random_id.rid.dec}"
   region = "us-east-1"
   instance_types = ["c8i.8xlarge"]
 
@@ -27,7 +27,7 @@ locals {
 
   tags = {
     Name     = local.name
-    Owner    = "your@email.com"
+    Owner    = "mihika.nerurkar@intel.com"
     Project  = "Nutanix AI - Intel Enterprise RAG"
     Duration = "0"
     Terraform = "true"

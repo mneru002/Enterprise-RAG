@@ -7,7 +7,7 @@
 ingress-nginx:
   controller:
     hostPort:
-      enabled: true
+      enabled: false
     ingressClass: "nginx"
     config:
       proxy-read-timeout: "3600"

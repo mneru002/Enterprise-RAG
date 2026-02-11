@@ -82,5 +82,7 @@ spec:
           config:
             endpoint: /v1/chat/completions
             LLM_MODEL_SERVER: vllm
-            LLM_MODEL_SERVER_ENDPOINT: <fiil your endpoint here>
-            LLM_MODEL_NAME: <fiil your model here>
+            LLM_MODEL_SERVER_ENDPOINT: "https://ab402344f1ffc49eab6d7a3cedf4a1c7-1551270285.us-east-1.elb.amazonaws.com/api/v1/chat/completions"
+            LLM_MODEL_NAME: "llama-3-8b"
+	    LLM_VLLM_API_KEY: "055fbf1b-179a-43de-ad40-4cc03ef07270"
+	    LLM_TLS_SKIP_VERIFY: "True"
